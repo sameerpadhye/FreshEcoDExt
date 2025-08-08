@@ -46,23 +46,20 @@ ui<-navbarPage(
  # Data input
   tabPanel("Data Input", 
            tags$h3(class = 'heading text-center', 
-                   style = "color:steelblue", 
+                   style = "color:steelblue; font-size:32px; font-family: Arial;", 
                    'What is FreshEcoDExt?'),
            p(h3("FreshEcoDExt (Freshwater Ecoregions Data Extraction and visualization Tool) is an app designed for extracting, transforming, visualizing and downloading information on freshwater ecoregions of the world. It builds upon the FEOW data/maps that are available on their webpage thereby giving more customized visualizations based on the user data.",
                 align = 'center'),
-             style = "color:steelblue"),
+             style = "color:steelblue; font-size:26px; font-family: Arial;"),
            fluidRow(column(12,
                            align = 'center',
                            fileInput("file1", 
-                                     h4("Choose Input File (.csv)"),
+                                     h4(strong("Choose Input File (.csv)"),
+                                        style = "font-size:22px; font-family: Arial;"),
                                      accept = c("text/csv",
                                                 "text/comma-separated-values,text/plain",
                                                 ".csv")
-                           ),
-                           p(h6("Please check the Read Me for Data input format and other details",
-                                align = 'center')
-                           
-           )
+                           )
            ),
            ## Map image specs
            HTML('<center><img src="world_fresheco.jpg" width="100%"></center>')
@@ -118,18 +115,18 @@ tabPanel("Read Me",
            column(12,
                   align = 'center',
                   tags$h2(class = 'heading text-left', 
-                          style = "color:steelblue", 
+                          style = "color:steelblue; font-size:32px; font-family: Arial;", 
                           'What are Ecoregions?'),
                   p(h3("'An ecoregion (ecological region) is an ecologically and geographically defined area that is smaller than a bioregion, which in turn is smaller than a biogeographic realm. Ecoregions cover relatively large areas of land or water, and contain characteristic, geographically distinct assemblages of natural communities and species.' (Wikipedia)",
                        align = 'left'),
-                    style = "color:steelblue"),
+                    style = "color:steelblue; font-size:26px; font-family: Arial;"),
                   br(),
                   tags$h2(class = 'heading text-left', 
-                          style = "color:steelblue", 
+                          style = "color:steelblue; font-size:32px; font-family: Arial;", 
                           'What are Freshwater Ecoregions?'),
                   p(h3("'A freshwater ecoregion is a large area encompassing one or more freshwater systems that contains a distinct assemblage of natural freshwater communities and species. The freshwater species, dynamics, and environmental conditions within a given ecoregion are more similar to each other than to those of surrounding ecoregions and together form a conservation unit.'(Wikipedia).",
                        align = 'left'),
-                    style = "color:steelblue"),
+                    style = "color:steelblue; font-size:26px; font-family: Arial;"),
                   tags$a(href="https://www.feow.org/", 
                          p(h5("Click here to read more on Freshwater Ecoregions"),
                            align='center')
@@ -151,13 +148,6 @@ tabPanel("Read Me",
                          tags$a(href="https://github.com/sameerpadhye/Ecoregions-and-Biomes-of-India--R-Shiny-app-/blob/main/readme.docx", 
                                 p("How to use the app?",
                                   align='center')),
-                         tags$div(
-                           "Created by: ",
-                           tags$a(href="https://sameermpadhye.wixsite.com/website", 
-                                  "Sameer M. Padhye"),
-                           tags$img(src = "Biologia Logo n.jpg",
-                                    align = "center")
-                         ),
                          p(h6("Made with", a("Shiny",
                                              href = "https://shiny.posit.co/")
                          )
