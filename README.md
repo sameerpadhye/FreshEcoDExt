@@ -35,7 +35,7 @@ Tabular data giving information about the ecoregion and its subregion for each l
 A heatmap showing the crosstab (counts) of different subregions and ecoregions with respect to the user data can be visualized. The color combinations are fixed 
 and cannot be changed via the app. Download option will be made available soon.
 
-##Current limitations of the app##
+## Current limitations of the app
 
 The map download aspect of the app does not work properly on smartphones and Mac OS in some cases. These issues will be resolved in the future. 
 Similarly, the rendering of the leaflet plot might not be ideal. It is advised that the input data not be above 5000 records when running directly via rshinyapps.
