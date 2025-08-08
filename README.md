@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/680302445.svg)](https://doi.org/10.5281/zenodo.16783200)
+
 # FreshEcoDExt
 
 
@@ -52,4 +54,4 @@ Though map visualization zoom is changeable, the output map image zoom is set at
 A large locality dataset might result in a heatmap with crowded labels.
 
 
-*Citation:* Padhye SM. 'FreshEcoDExt', an R Shiny App for leveraging freshwater ecoregion data geospatial data
+*Citation:* Padhye SM. 'FreshEcoDExt', an R Shiny App for leveraging freshwater ecoregion data geospatial data (Available via Zenodo: <https://doi.org/10.5281/zenodo.16783200>)
